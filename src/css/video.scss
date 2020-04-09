@@ -1,0 +1,78 @@
+$desktop: 840px;
+$tablet: 625px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin lgtablet {
+  @media (min-width: #{810px}) {
+    @content;
+  }
+}
+
+.video-player-item {
+  width: auto;
+  height: 380px;
+}
+
+.video--modal {
+}
+.video--item {
+  width: 300px;
+  min-height: 500px;
+  height: 100%;
+  background-color: black;
+  @include tablet {
+  }
+}
+
+// modal sidebar
+.video--modal--side {
+  display: flex;
+  // flex: 1;
+  flex-direction: column;
+  margin: 10px 0px;
+  padding: 10px 5px;
+  height: 100px;
+  overflow-y: auto;
+  @include desktop {
+    height: auto;
+  }
+}
+
+/// adm panel
+
+.adm--wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 10px;
+  span {
+    margin-right: 5px;
+  }
+}
+.adm--bullet {
+  background: #808080;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 5px;
+}
+
+.adm--profile--logo {
+  width: 30px;
+}
+// ad
+
+.ad--wrapper {
+  height: 50px;
+}
