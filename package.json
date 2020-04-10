@@ -20,7 +20,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://VikentorPierre.github.io/wshh-clone",
+  "homepage": "https://dopetho.com/",
   "eslintConfig": {
     "extends": "react-app"
   },
